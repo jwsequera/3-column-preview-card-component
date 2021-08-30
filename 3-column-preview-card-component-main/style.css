@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary*/
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*Neutral*/
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .attribution {
+    align-self: flex-end;
+    justify-self: center;
+} */
+
+.flex-container {
+    flex: 0 1 65%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    border: 1px solid black;
+    flex: 1 1 100%;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.item-car {
+    padding: 40px;
+    color: var(--very-light-gray);
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.item-car h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.btn {
+    min-width: 130px;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    background-color: inherit;
+    border: 2px solid var(--very-light-gray);
+}
+
+.br-or {
+    color: var(--bright-orange);
+}
+.br-or:hover {
+    color: var(--very-light-gray);
+} 
+
+.da-cy {
+    color: var(--dark-cyan);
+}
+
+.da-cy:hover {
+    color: var(--very-light-gray);
+} 
+
+.ve-da-cy {
+    color: var(--very-dark-cyan);
+}
+
+.ve-da-cy:hover {
+    color: var(--very-light-gray);
+} 
+
+img {
+    min-width: 25%;
+    max-width: 35%;
+}
+
+.sedan {
+    flex: 1 1 100%;
+    background-color: var(--bright-orange);
+}
+
+.suv {
+    flex: 1 1 100%;
+    background-color: var(--dark-cyan);
+} 
+
+.luxury {
+    flex: 1 1 100%;
+    background-color: var(--very-dark-cyan);
+}
+
+@media (max-width: 414px){
+    
+    body{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-container {
+        margin: 20px;
+        flex: 0 1 100vh;
+
+
+        flex-direction: column;
+    }
+
+    .item-car *  {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
